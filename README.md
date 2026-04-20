@@ -10,12 +10,18 @@
 
 You're going to make this quiz interactive with JS & jQuery. In this first step, add an event listener to the form's 'submit' event.
 <br><br>
-_Hint:_<br>`$(_).on(_, _);`
+_Hint:_<br>`$(_).on("submit",function(event){`<br>
+`event.preventDefault();`<br>
+` `<br>
+` `<br>
+`});`
 <br><br>
 ### Step #2 - Check user answer <br>
 In this step, you should add code that figures out what answer the user picked and tells them if they got it right by outputting a message in the `#result` div.
 <br><br>
-_Hint:_<br>`var _ = _;`<br>
+_Hint:_<br>`var $answer = $("#trivia-answer");`<br>
+`var answer = _.val();`<br>
+` `<br>
 `if (_ == 'hall') {`<br>
 `  $('#result').text(_);`<br>
 `}`
